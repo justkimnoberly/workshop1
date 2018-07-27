@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <ul>
-            <li><a href="index.html">Home</li>
-            <li><a href="about.html">About Us</a></li>
-            <li>Contact Us</li>
-        </ul>
-    </nav>
+    <header id="header">
+        <div class="inner">
+            <a href="index.html" class="logo"><img src="images/logo.png" style="width:250px;"></a>
+            <nav id="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
     <div class="container">
-        <header>
-                <h1>Help Us Provide Sustainable Water Solutions, One Community At A Time</h1>
+        <section>
+            <div class="inner">
+                <h1>Help Provide Sustainable Water Solutions</h1>
                     <div class="container">
                         <form action="action_page.php">
                       
@@ -31,7 +37,7 @@
                           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                           <fieldset>
                                 <legend>Donate:</legend>
-                                   <div class="button">
+                                   <div class="money">
                                     <button> 25 </button>
                                     <button>50 </button>
                                     <button> 75</button>
@@ -39,14 +45,16 @@
                                     <button> Other </button>
                                    </div>
                                </fieldset>
-                          
-                               <input type="submit" value="Submit">
-                          
+                               <br>
+
+                            <div class="submit">
+                                <button>Submit</button>
+                            </div>
                         </form>
                       </div>
-
+            </div>
                 
-        </header>
+            </section>
             
     </div>
 
